@@ -35,7 +35,7 @@ public class BalanceEnquiry extends JFrame implements ActionListener{
         //As soon frame opens I need balance to be displayed..so writing inside constructor
         
         try{
-            ResultSet rs = c.s.executeQuery("select * from bank where pin = '"+pinnumber+"'");
+            ResultSet rs = c.s.executeQuery("select * from login where pin = '"+pinnumber+"'");
             
             while (rs.next()) {
                 if (rs.getString("type").equals("Deposit")) {

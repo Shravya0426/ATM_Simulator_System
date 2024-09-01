@@ -71,8 +71,7 @@ public class Withdrawl extends JFrame implements ActionListener{
                 conn.s.executeUpdate(query);
                 //if deposit is successful than below
                 JOptionPane.showMessageDialog(null, "Rs. "+number+" Withdraw Successfully");
-                setVisible(false);  //later to close this frame and 
-                new Transactions(pinnumber).setVisible(true); //open transaction frame
+                setVisible(false);  
               }
               catch(Exception e){
                   System.out.println(e);
